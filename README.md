@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 팀 프로젝트 정산기 (Team Settlement Calculator)
 
-# Run and deploy your AI Studio app
+이 프로젝트는 8인 팀 프로젝트의 지출을 관리하고 공정하게 정산하기 위한 웹 애플리케이션입니다.
 
-This contains everything you need to run your app locally.
+## 로컬 실행 방법
 
-View your app in AI Studio: https://ai.studio/apps/4f4a60b0-bd34-4ba2-9bb9-873c1d3cc4c8
+이 프로젝트를 로컬 환경에서 실행하려면 다음 단계를 따르세요.
 
-## Run Locally
+### 1. 사전 준비
+- [Node.js](https://nodejs.org/) (버전 18 이상 권장)가 설치되어 있어야 합니다.
 
-**Prerequisites:**  Node.js
+### 2. 의존성 설치
+터미널(또는 명령 프롬프트)을 열고 프로젝트 폴더로 이동한 후 다음 명령어를 실행합니다:
+```bash
+npm install
+```
 
+### 3. 개발 서버 실행
+다음 명령어를 실행하여 로컬 개발 서버를 시작합니다:
+```bash
+npm run dev
+```
+서버가 시작되면 브라우저에서 `http://localhost:3000`으로 접속하여 앱을 확인할 수 있습니다.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 4. 프로덕션 빌드
+배포용 파일을 생성하려면 다음 명령어를 실행합니다:
+```bash
+npm run build
+```
+빌드된 파일은 `dist` 폴더에 생성됩니다.
+
+## 주요 기능
+- **대시보드**: 총 지출액, 남은 예산, 1인당 분담금 확인
+- **지출 내역**: 팀원별 지출 추가 및 삭제, 전체 로그 확인
+- **정산 결과**: 김재홍 님 중심의 최적화된 송금 가이드 제공
+- **리포트 다운로드**: 현재 정산 상태를 텍스트 파일로 저장
+
+## 기술 스택
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
