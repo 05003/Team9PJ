@@ -1,0 +1,5 @@
+{
+  "name": "팀 프로젝트 정산기",
+  "description": "8인 팀 프로젝트를 위한 지출 내역 관리 및 정산 자동화 도구",
+  "requestFramePermissions": []
+}
